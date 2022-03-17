@@ -7,7 +7,7 @@ import './rn-addons';
 addDecorator(withKnobs);
 
 configure(() => {
-  require('./stories');
+  loadStories();
 }, module);
 
 const StorybookUIRoot = getStorybookUI({});
