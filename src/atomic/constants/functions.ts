@@ -26,6 +26,7 @@ export const colorsMap = (token: any, colors: any) => {
     "SECONDARY_BASE_02": colors.SECONDARY_BASE_02,
     "SECONDARY_BASE_03": colors.SECONDARY_BASE_03,
     "LIGHT_BASE_01": colors.LIGHT_BASE_01,
+    "LIGHT_BASE_02": colors.LIGHT_BASE_02,
     "DARK_BASE_01": colors.DARK_BASE_01,
     "transparent": "transparent",
     "undefined": colors.PRYMARY_BASE_01,

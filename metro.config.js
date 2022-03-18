@@ -11,6 +11,9 @@ module.exports = {
       transform: {
         experimentalImportSupport: false,
         inlineRequires: true,
+        babelTransformerPath: require.resolve(
+          "react-native-storysource-transformer"
+        ),
       },
     }),
   },

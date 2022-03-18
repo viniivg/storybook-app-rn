@@ -42,12 +42,12 @@ const styleButton = {
         height: 50,
         padding: 8,
         color: "PRYMARY_BASE_02",
-        colorDisabled: "LIGHT_BASE_03",
+        colorDisabled: "LIGHT_BASE_02",
         borderRadius: 4,
         text: {
             type: "paragraphXL",
             textColor: "LIGHT_BASE_01",
-            textColorDisabled: "DARK_BASE_02",
+            textColorDisabled: "DARK_BASE_01",
         },
 
     },
@@ -58,13 +58,13 @@ const styleButton = {
         color: "LIGHT_BASE_01",
         colorDisabled: "LIGHT_BASE_01",
         borderColor: "PRYMARY_BASE_02",
-        borderColorDisabled: "LIGHT_BASE_05",
+        borderColorDisabled: "LIGHT_BASE_02",
         borderWidth: 1,
         borderRadius: 4,
         text: {
             type: "paragraphXL",
             textColor: "PRYMARY_BASE_02",
-            textColorDisabled: "DARK_BASE_01",
+            textColorDisabled: "LIGHT_BASE_02",
         },
     },
 }

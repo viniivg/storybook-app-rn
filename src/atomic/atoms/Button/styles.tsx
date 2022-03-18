@@ -10,10 +10,10 @@ export const TouchableOpacity = styled.TouchableOpacity<propsTouchableOpacity>`
   border-left-width: ${({ type }) => type?.borderWidth ? type.borderWidth : 0}px;
   border-right-width: ${({ type }) => type?.borderWidth ? type.borderWidth : 0}px;
   border-bottom-width: ${({ type }) => type?.borderWidth ? type.borderWidth : 0}px;
-  border-top-color: ${({ type, disabled }) => disabled ? type?.borderColorDisabled : type?.borderColor ? type?.borderColor : "none"};
-  border-left-color: ${({ type, disabled }) => disabled ? type?.borderColorDisabled : type?.borderColor ? type?.borderColor : "none"};
-  border-right-color: ${({ type, disabled }) => disabled ? type?.borderColorDisabled : type?.borderColor ? type?.borderColor : "none"};
-  border-bottom-color: ${({ type, disabled }) => disabled ? type?.borderColorDisabled : type?.borderColor ? type?.borderColor : "none"};
+  border-top-color: ${({ type, disabled, color }) => disabled ? colorsMap(type?.borderColorDisabled, color) : type?.borderColor ? colorsMap(type?.borderColor, color) : "none"};
+  border-left-color: ${({ type, disabled, color }) => disabled ? colorsMap(type?.borderColorDisabled, color) : type?.borderColor ? colorsMap(type?.borderColor, color) : "none"};
+  border-right-color: ${({ type, disabled, color }) => disabled ? colorsMap(type?.borderColorDisabled, color) : type?.borderColor ? colorsMap(type?.borderColor, color) : "none"};
+  border-bottom-color: ${({ type, disabled, color }) => disabled ? colorsMap(type?.borderColorDisabled, color) : type?.borderColor ? colorsMap(type?.borderColor, color) : "none"};
   background-color: ${({ type, theme, disabled, color }) => disabled ? colorsMap(type?.colorDisabled, color) : colorsMap(type?.color, color) ? colorsMap(type.color, color) : theme.colors.PRYMARY_BASE_01};
   border-radius: ${({ type, theme }) => type?.borderRadius ? type.borderRadius : theme.styleButton.buttonPrimaryLarge.borderRadius}px;
   align-items: center;
