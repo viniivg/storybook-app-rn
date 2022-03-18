@@ -9,9 +9,10 @@
     "test": "jest",
     "lint": "eslint .",
     "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook --config-dir ./storybook-website --output-dir dist-storybook-website",
     "prestorybook": "rnstl",
-    "storybook-web-build": "build-storybook --config-dir ./storybook-website --output-dir dist-storybook-website"
+    "storybook-web-build": "build-storybook --config-dir ./storybook-website --output-dir dist-storybook-website",
+    "chromatic": "npx chromatic --project-token=5fc5544ee525"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -43,6 +44,7 @@
     "babel-loader": "^8.2.3",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-react-native-web": "^0.17.7",
+    "chromatic": "^6.5.3",
     "eslint": "^8.11.0",
     "eslint-plugin-storybook": "^0.5.7",
     "jest": "^27.5.1",
